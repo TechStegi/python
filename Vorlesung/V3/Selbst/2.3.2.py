@@ -7,3 +7,9 @@ while i <= 5:
     i += 1
 print(speicher)
 
+
+
+storage = 0
+for j in range(6):
+    storage += (-1)**j * 2*(j+1)
+print(storage)
