@@ -38,4 +38,4 @@ def muster2(n):
         # Zeilenumbruch
         print("")
     
-muster2(5)
+muster2(10)
