@@ -1,9 +1,12 @@
 
+
+
 def dreieck(n):
+    
     for i in range(n):
         for j in range(i+1):
             print("*", end='')
-        print("")
+        print()
         
-dreieck(5)
+dreieck(10)
 

@@ -1,9 +1,9 @@
 # 5 bis 29 in 4er schritten
 
-i = 5
+i = 1
 while i < 30:
-    print(i)
     i = i + 4
+    print(i)
 
 
 for j in range(5, 30, 4):

@@ -14,6 +14,6 @@ def muster1(n):
             print("*", end='')
         print("")
         
-muster1(5)
+muster1(10)
 
 
