@@ -1,5 +1,7 @@
+
 from math import sqrt
 from math import pi
+
 
 def harmonischesMittel(a, b):
     return (2*a*b)/(a+b)
@@ -14,3 +16,5 @@ for n in range(30):
     a = harmonischesMittel(a, b)
     b = geometrischesMittel(a, b)
     print(n, a, b, pi-a, pi-b)
+    
+    
