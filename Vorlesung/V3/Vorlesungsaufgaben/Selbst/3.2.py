@@ -7,9 +7,7 @@ def maxindex(a):
     s = a[0]
     index = 0
     for i in range(1, len(a)): 
-        if s > a[i]:
-            continue
-        else:
+        if s < a[i]:
             s = a[i]
             index = i
     return index
@@ -21,9 +19,7 @@ def minindex(a):
     s = a[0]
     index = 0
     for i in range(1, len(a)):
-        if s < a[i]:
-            continue
-        else:
+        if s > a[i]:
             s = a[i]
             index = i
     return index

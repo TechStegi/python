@@ -29,3 +29,16 @@ def pascal(n):
     return s
 
 print(pascal(n))
+
+def pascal2(n):
+    p = [1]
+    print(p)
+
+    for i in range(1, n):
+        p = p + [1]
+        neu = [1] * len(p)
+        for j in range(1, len(p)-1):
+            neu[j] = p[j-1] + p[j]
+        p = neu
+        print(p)
+pascal2(5)
