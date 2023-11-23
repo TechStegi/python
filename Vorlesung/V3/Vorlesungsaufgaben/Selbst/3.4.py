@@ -20,3 +20,5 @@ def removeAll(a, x):
     return a
 print(removeAll(liste, 4))
 
+
+

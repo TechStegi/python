@@ -19,8 +19,8 @@ print(differenz(a))
 
 
 #3.3
-n = 6
 def pascal(n):
+    n = 6
     s = 0
     z = 1
     for i in range(n+1):
