@@ -1,8 +1,14 @@
 
 
-def istPerfekt(n):
+def vollkommen(zahl):
     summe = 0
-    for k in range(1, n/2+1):
-        if (n % k == 0):
+    for k in range(1, zahl):
+        if (zahl % k == 0):
             summe = summe + k
-    return summe == n
+    return summe == zahl
+
+
+
+print(vollkommen(6))
+
+
