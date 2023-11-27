@@ -17,5 +17,3 @@ for n in range(30):
     a = harmonischesMittel(a, b)
     b = geometrischesMittel(a, b)
     print(n, a, b, pi-a, pi-b)
-    
-    
