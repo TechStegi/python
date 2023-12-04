@@ -42,3 +42,4 @@ def pascal2(n):
         p = neu
         print(p)
 pascal2(5)
+

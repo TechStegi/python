@@ -25,5 +25,3 @@ def tausch2(a, i, j):
 
 tausch2(liste, 2, 4)
 print(liste)
-
-
