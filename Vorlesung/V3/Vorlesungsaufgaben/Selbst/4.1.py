@@ -1,6 +1,6 @@
 
 
-file_path = "RaisingHell.txt"
+file_path = "./simpleText.txt"
 
 file = open(file_path, "r")
 text = file.readlines()
@@ -45,12 +45,12 @@ def count():
 print(count())
 
 
-# 4.3 
+# 4.3
 def singles(some_text):
     print("vorher:", some_text)
     new_text = ""
     for zeile in some_text:
-        new_line = zeile[0] 
+        new_line = zeile[0]
         for i in range(1, len(zeile)):
             if zeile[i] != zeile[i-1]:
                 new_line += zeile[i]
@@ -60,29 +60,24 @@ def singles(some_text):
 print(singles(simple_text))
 
 
-#4.5
+#4.5 funktioniert nicht
 def find(insert_text):
     x = "are"
-    # count = 0
+    count = 0
     # index = 0
     for zeile in insert_text: # durch jede Zeile = Array Element
         for i in range(len(zeile)):  # durch jeden Buchstaben der Zeile
             if zeile[i] == x[0]:
+                count = 1
                 for j in range(1, len(x)):  # durch jeden Buchstaben von x
-                    if zeile[i+j] != x[j]:
-                        break
-                    else: 
+                    if count == len(x):
                         return "Gefunden"
-                    # if zeile[i+j] == x[j]:
-        # for zeichen in zeile:
-            # for i in range(len(x)):
-            #     if zeichen == x[i]:
-            #         count = count + 1
-            #         if count == len(x):
-            #             # index = i - len(x)
-            #             return "Gefunden"
-            #         else:
-            #             count = 0
+                    if i + j < len(zeile) and zeile[i+j] == x[j]:
+                        count += 1
+                        continue
+                    else:
+                        count = 0
+                        break
     return "Keine Zeichenkette x gefunden."
 
 print(find(simple_text))
