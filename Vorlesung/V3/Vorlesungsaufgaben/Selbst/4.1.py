@@ -1,9 +1,11 @@
 
 
-file_path = "./simpleText.txt"
+file_path = "simpleText.txt"
 
 file = open(file_path, "r")
 text = file.readlines()
+
+# text =  ["hallio ich heißße tim", "ich mag fußball"]
 
 simple_text = open("simpleText.txt", "r").readlines()
 

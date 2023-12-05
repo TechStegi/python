@@ -1,5 +1,4 @@
 def mediumwordlength(text):
-    length_of_one_word = 0
     avg = 0
     runs = 0
     zeichen = 0

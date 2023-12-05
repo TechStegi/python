@@ -1,4 +1,6 @@
 
+
+
 def umkehren(s):
     a = ""
     for i in range(len(s)-1, -1, -1):
@@ -16,3 +18,4 @@ def entfernen(s, c):
     return a
 
 print(entfernen("Alle L löschen", "l"))
+

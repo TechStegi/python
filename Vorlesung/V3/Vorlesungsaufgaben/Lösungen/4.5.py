@@ -1,4 +1,7 @@
+
 def find(text, x):
+    text = ""
+    # x = "ist"
     n = 0
     while n < len(text) - len(x):
         i = 0

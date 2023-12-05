@@ -1,3 +1,5 @@
+
+
 def count(text):
     wort = 0
     for zeichen in text:

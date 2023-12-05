@@ -37,3 +37,6 @@ def clean(text):
     # for i in range(len(text)):
     #     if text[i] != "\n":
 print(clean(file))
+
+
+
