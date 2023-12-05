@@ -14,7 +14,7 @@ def find(text, x):
     print("nicht gefunden")
 
 
-file = open("simpleText.txt", "r")
+file = open("myText.txt", "r")
 text = file.read()
 x = "are"
 
