@@ -21,7 +21,7 @@ def zaehlen(text):
         new_file[i] = new_file[i].replace("'", "")
         new_file[i] = new_file[i].replace("-", "")
         # prüfe ob das wort new_file[i] bereits in die wort-Liste aufgenommen wurde
-            # wenn ja, schaue an welchem index new_file[i] in der wort-Liste bereits enthalten ist, und erhöhe die Anzahl des Wortes um 1
+        # wenn ja, schaue an welchem index new_file[i] in der wort-Liste bereits enthalten ist, und erhöhe die Anzahl des Wortes um 1
         if new_file[i] in wort:
             index = wort.index(new_file[i])
             anzahl[index] += 1
@@ -33,13 +33,12 @@ def zaehlen(text):
     # suche in der anzahl-Liste nach dem größten Wert, dieser ist gleich dem häufigsten Wort
     höchste = 0
     for i in range(1, len(anzahl)):
-        if anzahl[i] > anzahl[i-1]:
+        if anzahl[i] > anzahl[i - 1]:
             höchste = anzahl[i]
     print(höchste)
 
-                
-        # anzahl_kopie = anzahl.copy()
-        # print("Wort:", wort, "Vorkommen", anzahl)
+    # anzahl_kopie = anzahl.copy()
+    # print("Wort:", wort, "Vorkommen", anzahl)
     # return wort, anzahl
 
 
