@@ -3,6 +3,17 @@ mobyDick = open("MobyDick.txt", "r").readlines()
 dieVerwandlung = open("DieVerwandlung.txt", "r").readlines()
 
 
+def maxindex(liste):
+    maxindex = 0
+    maxnumber = liste[0]
+    for i in range(len(liste)):
+        if liste[i] > maxnumber:
+            maxnumber = liste[i]
+            maxindex = i
+        # print("new round", maxindex)
+    return maxindex
+
+
 def zaehlen(text):
     new_file = []
     wort = []
@@ -31,14 +42,14 @@ def zaehlen(text):
             anzahl.append(1)
 
     # suche in der anzahl-Liste nach dem größten Wert, dieser ist gleich dem häufigsten Wort
-    höchste = 0
-    for i in range(1, len(anzahl)):
-        if anzahl[i] > anzahl[i - 1]:
-            höchste = anzahl[i]
-    print(höchste)
+    for i in range(0, 10):
+        wordindex = maxindex(anzahl)
+        häufigstes_wort = wort[wordindex]
+        print(str(i + 1) + ". Wort:", häufigstes_wort, "Vorkommen", anzahl[wordindex])
+        del wort[wordindex]
+        del anzahl[wordindex]
 
     # anzahl_kopie = anzahl.copy()
-    # print("Wort:", wort, "Vorkommen", anzahl)
     # return wort, anzahl
 
 
