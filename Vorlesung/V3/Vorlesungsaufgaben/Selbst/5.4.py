@@ -30,6 +30,16 @@ def laengste_folge(a):
     return [maxfolge, maxindex]
 
 
+def maxvalue_recursive(a, index=0, maxfolge = None, maxindex = None):
+    if index == len(a):
+        return [maxfolge, maxindex]
+    current_element = a[index]
+    if maxfolge is None or current_element > maxfolge:
+        return maxvalue_recursive(a, index+1, current_element, index)
+    else:
+        return maxvalue_recursive(a, index+1, maxfolge, maxindex)
+
+
 def c2(folge_start, ende):
     folge_liste = []
     # Schleife für Durchgänge für alle Zahlen 1 bis N, i steht dabei für die Anzahl der Durchgänge
