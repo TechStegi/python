@@ -1,10 +1,24 @@
 file = open("RaisingHell.txt", "r").readlines()
 
-dict = { "a":1, "b":2, "c":3, "d": 4, "e": 5, "f": 6, "g":7, "h":8, "i":9, "j":10, "k":11, "l":12 }
-        
+dict = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+    "d": 4,
+    "e": 5,
+    "f": 6,
+    "g": 7,
+    "h": 8,
+    "i": 9,
+    "j": 10,
+    "k": 11,
+    "l": 12,
+}
+
 d = {}
 
-#6.3
+
+# 6.3
 def häufigste(n, txt):
     text = ""
     for zeile in txt:
@@ -26,7 +40,7 @@ def häufigste(n, txt):
                 d[w] = d[w] + 1
             else:
                 d[w] = 1
-                
+
     print(valuesortiert(d))
     for i in range(n):
         wort = valuesortiert(d)[0]
@@ -37,7 +51,7 @@ def häufigste(n, txt):
     return "Done"
 
 
-#6.2
+# 6.2
 def valuesortiert(dict):
     values = list(dict.values())
     values.sort()
@@ -49,16 +63,16 @@ def valuesortiert(dict):
 
 print(häufigste(5, file))
 
-#6.4
+
+# 6.4
 def maxnkey(d, n):
-    l = []    
+    l = []
     for i in range(n):
         ch = valuesortiert(d)[0]
         l.append(ch)
-        del d[ch]  
+        del d[ch]
     l.reverse()
     return l
 
+
 print(maxnkey(dict, 5))
-        
-        

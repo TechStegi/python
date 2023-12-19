@@ -1,5 +1,7 @@
 
 
+
+
 def summe1(n):
     s = 0
     for i in range(1, n+1):
@@ -30,6 +32,13 @@ print(summe_rekursiv(5))
 
 
 
+
+
+liste[1]
+
+s = "hello i am michael"
+
+
 def textaufgabe():
     s = ""
     liste = ["hello", "i", "am", "michael"]
@@ -37,6 +46,4 @@ def textaufgabe():
         s = s + liste[i] + " "
     return s
 
-
 print(textaufgabe())
-    

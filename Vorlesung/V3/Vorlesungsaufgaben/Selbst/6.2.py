@@ -2,10 +2,10 @@
 
 zahlen = {'drei':3, 'eins':1, 'neun':9, 'zwei':2}
 
-print("unsortiert")
-for k in zahlen:
-    print(k, zahlen[k])        
-    
+# print("unsortiert")
+# for k in zahlen:
+#     print(k, zahlen[k])        
+
 
 def valuesortiert(dict):
     values = list(dict.values())

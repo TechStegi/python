@@ -3,6 +3,10 @@ tel = {
     "private": {"Kyle": "424733", "Karen": "511727"},
 }
 
+print(tel.keys())
+
+
+
 print("len(tel)", len(tel))  # 2
 print("len(tel['work'])", len(tel["work"]))  # 3
 print("len(tel['private'])", len(tel["private"]))  # 2
