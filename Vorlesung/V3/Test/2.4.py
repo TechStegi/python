@@ -1,12 +1,16 @@
 
-def muster(n):
-    for i in range(n):
-        for j in range(1, i+2):
-            print("*", end="")
-        print()
-        
-    for k in range(n-1):
-        for l in range(n-k-1, 0, -1):
-            print("*", end='')
-        print()
-muster(5)
+
+def leibniz(n):
+    s = 0
+    for k in range(n+1):
+        s = s + (-1)**k/(2*k+1)
+    return s
+
+def recniz(n):
+    if n == 0:
+        return 1
+    else:
+        return ((-1)**n)/(2*n+1)+recniz(n-1)
+    
+print(leibniz(300))
+print(recniz(10))
